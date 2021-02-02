@@ -1,39 +1,9 @@
-<view class="items">
-  <view class="title" bindtap="onShopList">
-    <view class="name">男装</view>
+<view class="items" wx:for="{{lists}}" wx:key="index">
+  <view class="title" data-id="{{item.id}}" bindtap="onShopList">
+    <view class="name">{{item.title}}</view>
     <view class="icon iconfont icon-gengduo"></view>
   </view>
   <view class="content">
-    <view bindtap="onShopList">羽绒服</view>
-    <view>皮衣</view>
-    <view>棉衣</view>
-    <view>鞋子</view>
-    <view>袜子</view>
-  </view>
-</view>
-<view class="items">
-  <view class="title">
-    <view class="name">男装</view>
-    <view class="icon iconfont icon-gengduo"></view>
-  </view>
-  <view class="content">
-    <view>羽绒服</view>
-    <view>皮衣</view>
-    <view>棉衣</view>
-    <view>鞋子</view>
-    <view>袜子</view>
-  </view>
-</view>
-<view class="items">
-  <view class="title">
-    <view class="name">男装</view>
-    <view class="icon iconfont icon-gengduo"></view>
-  </view>
-  <view class="content">
-    <view>羽绒服</view>
-    <view>皮衣</view>
-    <view>棉衣</view>
-    <view>鞋子</view>
-    <view>袜子</view>
+    <view wx:for="{{item.children}}" wx:key="index" data-id="{{item.id}}" bindtap="onShopList">{{item.title}}</view>
   </view>
 </view>

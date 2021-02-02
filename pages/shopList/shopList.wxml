@@ -1,2 +1,1 @@
-<!--pages/shopList/shopList.wxml-->
-<text>pages/shopList/shopList.wxml</text>
+<list list="{{list}}" txtShow="{{txtShow}}" bind:onDetailClick="onDetailClick"></list>
