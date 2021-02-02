@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="item">
+    <block wx:for="{{list}}" wx:key="index">
+      <view class="list" wx:if="{{index % 2 == 0}}" data-id="{{item.id}}" bindtap="onDetailClick">
+        <image class="cover" mode="widthFix" src="{{item.img}}"></image>
+        <view class="txt">{{item.title}}</view>
+        <view class="price"><span>￥</span>20</view>
+      </view>
+    </block>
+  </view>
+  <view class="item">
+    <block wx:for="{{list}}" wx:key="index">
+      <view class="list" wx:if="{{index % 2 == 1}}" data-id="{{item.id}}" bindtap="onDetailClick">
+        <image class="cover" mode="widthFix" src="{{item.img}}"></image>
+        <view class="txt">{{item.title}}</view>
+        <view class="price"><span>￥</span>20</view>
+      </view>
+    </block>
+  </view>
+</view>
+<view class="no-data" wx:if="{{txtShow}}">~没有更多了~</view>

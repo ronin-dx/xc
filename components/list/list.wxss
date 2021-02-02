@@ -1,0 +1,59 @@
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #EDEDED;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container .item {
+  width: 340rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .item .list {
+  background-color: #ffffff;
+  border-radius: 8rpx;
+  margin-top: 20rpx;
+  overflow: hidden;
+  padding-bottom: 18rpx;
+  box-shadow: 0 4rpx 4rpx 0 rgba(0, 0, 0, 0.1);
+}
+
+.container .item .list .cover {
+  width: 350rpx;
+}
+
+.container .item .list .txt {
+  width: 320rpx;
+  margin: 0 auto;
+  font-size: 32rpx;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.container .item .list .price {
+  width: 320rpx;
+  margin: 0 auto;
+  color: #FF745D;
+  text-align: right;
+  margin-top: 10rpx;
+  font-size: 34rpx;
+}
+.container .item .list .price span {
+  font-size: 24rpx;
+}
+.no-data {
+  text-align: center;
+  line-height: 120rpx;
+}

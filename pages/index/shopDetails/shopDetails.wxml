@@ -1,0 +1,10 @@
+<view class="swiper-warp">
+  <swiper class="swiper" bindchange="bindchange">
+    <block wx:for="{{swiperLists}}" wx:key="*this">
+      <swiper-item class="swiper-item">
+        <image class="swiper-img" src="{{item.img}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="swiper-page">{{currentSwiperIndex}} / {{swiperLists.length}}</view>
+</view>

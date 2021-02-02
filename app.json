@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/tabbar/index/index",
+    "pages/tabbar/sort/sort",
+    "pages/tabbar/shopCar/shopCar",
+    "pages/tabbar/my/my",
+    "pages/index/shopDetails/shopDetails",
+    "pages/shopList/shopList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "优易网",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/tabbar/index/index",
+        "iconPath": "images/tabbar/index.png",
+        "selectedIconPath": "images/tabbar/index_on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tabbar/sort/sort",
+        "iconPath": "images/tabbar/sort.png",
+        "selectedIconPath": "images/tabbar/sort_on.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/tabbar/shopCar/shopCar",
+        "iconPath": "images/tabbar/shop_car.png",
+        "selectedIconPath": "images/tabbar/shop_car_on.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/tabbar/my/my",
+        "iconPath": "images/tabbar/my.png",
+        "selectedIconPath": "images/tabbar/my_on.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "list": "/components/list/list"
+  }
+}

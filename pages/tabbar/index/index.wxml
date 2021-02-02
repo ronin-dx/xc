@@ -1,0 +1,1 @@
+<list list="{{list}}" txtShow="{{txtShow}}" bind:onDetailClick="onDetailClick"></list>
